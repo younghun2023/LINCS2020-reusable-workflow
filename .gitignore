@@ -1,0 +1,27 @@
+# R temporary files
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# RStudio temporary files
+.Rproj.user/
+
+# Temporary files
+*.tmp
+*.log
+*~
+.DS_Store
+Thumbs.db
+
+# Large datasets
+*.rds
+*.RData
+*.h5
+*.h5ad
+
+# Sensitive files
+.env
+*.pem
+*.key
+credentials.json

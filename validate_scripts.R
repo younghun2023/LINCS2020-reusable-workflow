@@ -1,0 +1,11 @@
+files <- list.files(pattern="[.]R$",full.names=TRUE)
+for(f in files) invisible(parse(f))
+code <- parse("01_screen.R")
+env <- new.env(parent=baseenv())
+for(e in code) if(is.call(e) && identical(e[[1]],as.name("<-")) && is.symbol(e[[2]]) &&
+  as.character(e[[2]]) %in% c("unweighted_es","score_one","parse_qc")) eval(e,env)
+env$up_ids <- c("a","b"); env$down_ids <- c("c","d")
+stopifnot(env$score_one(c(2,1,-1,-2),letters[1:4])[3]==1)
+stopifnot(env$score_one(c(-2,-1,1,2),letters[1:4])[3]== -1)
+stopifnot(identical(env$parse_qc(c("1","0","2","3",NA)),c(TRUE,FALSE,FALSE,FALSE,FALSE)))
+cat("All scripts parse; scoring-direction and exact-1 QC checks pass.\n")

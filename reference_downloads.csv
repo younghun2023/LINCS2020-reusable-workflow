@@ -1,0 +1,7 @@
+Resource,Filename,URL
+LINCS2020,level5_beta_trt_cp_n720216x12328.gctx,https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/level5/level5_beta_trt_cp_n720216x12328.gctx
+LINCS2020,siginfo_beta.txt,https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/siginfo_beta.txt
+LINCS2020,geneinfo_beta.txt,https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/geneinfo_beta.txt
+LINCS2020,compoundinfo_beta.txt,https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/compoundinfo_beta.txt
+LINCS2020,cellinfo_beta.txt,https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/cellinfo_beta.txt
+LINCS2020,README.txt,https://s3.amazonaws.com/macchiato.clue.io/builds/LINCS2020/README.txt
